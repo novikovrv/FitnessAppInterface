@@ -11,7 +11,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		1D9314BF2D0DBFA90000AE97 /* Exceptions for "FeetnessApp" folder in "FeetnessApp" target */ = {
+		1D1CA7A12D4D046A0061F793 /* Exceptions for "FeetnessApp" folder in "FeetnessApp" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				SupportingFiles/Info.plist,
@@ -24,7 +24,7 @@
 		1D93149C2D0D95530000AE97 /* FeetnessApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				1D9314BF2D0DBFA90000AE97 /* Exceptions for "FeetnessApp" folder in "FeetnessApp" target */,
+				1D1CA7A12D4D046A0061F793 /* Exceptions for "FeetnessApp" folder in "FeetnessApp" target */,
 			);
 			path = FeetnessApp;
 			sourceTree = "<group>";
