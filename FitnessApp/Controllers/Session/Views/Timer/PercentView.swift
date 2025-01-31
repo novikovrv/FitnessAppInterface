@@ -42,6 +42,7 @@ extension TimerView {
             stackView.addArrangedSubview(percentLabel)
             stackView.addArrangedSubview(subtitleLabel)
         }
+        
         override func constraintViews() {
             super.constraintViews()
             
@@ -52,10 +53,10 @@ extension TimerView {
                 stackView.bottomAnchor.constraint(equalTo: bottomAnchor),
             ])
         }
+        
         func configure(with title: String, andValue value: Int) {
             subtitleLabel.text = title
             percentLabel.text = "\(value)%"
         }
-        
     }
 }

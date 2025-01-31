@@ -8,11 +8,9 @@
 import UIKit
 
 class SessionController: BaseController {
-    
     private let timerView = TimerView()
     private let statsView = StatsView(with: R.Strings.Session.workoutStats)
     private let stepsView = StepsView(with: R.Strings.Session.stepsCounter)
-    
     
     private let timerDuration = 3.0
     
@@ -25,7 +23,6 @@ class SessionController: BaseController {
         
         timerView.state = timerView.state == .isRuning ? .isStopped : .isRuning
         setTitleForNavBarButton(timerView.state == .isRuning ? R.Strings.Session.navBarPause : R.Strings.Session.navBarStart, at: .left)
-        
         
     }
     override func navBarRightButtonHandler() {
@@ -42,8 +39,8 @@ extension SessionController {
         view.setupView(timerView)
         view.setupView(statsView)
         view.setupView(stepsView)
-        
     }
+    
     override func constraintViews() {
         super.constraintViews()
         
@@ -55,15 +52,14 @@ extension SessionController {
             statsView.topAnchor.constraint(equalTo: timerView.bottomAnchor, constant: 10),
             statsView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 15),
             statsView.trailingAnchor.constraint(equalTo: view.centerXAnchor, constant: -7.5),
-            //statsView.heightAnchor.constraint(equalToConstant: 200),
             
             stepsView.topAnchor.constraint(equalTo: statsView.topAnchor),
             stepsView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -15),
             stepsView.leadingAnchor.constraint(equalTo: view.centerXAnchor, constant: 7.5),
             stepsView.heightAnchor.constraint(equalTo: statsView.heightAnchor),
         ])
-        
     }
+    
     override func configureAppearance() {
         super.configureAppearance()
         

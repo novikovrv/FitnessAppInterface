@@ -8,13 +8,11 @@
 import UIKit
 
 final class DailyPerformanceView: WABaseInfoView {
-    
     private let barsView = WABarsView()
     
     func configure(with items: [WABarView.Data]) {
         barsView.configure(with: items)
     }
-    
 }
 
 extension DailyPerformanceView {
@@ -22,8 +20,8 @@ extension DailyPerformanceView {
         super.setupViews()
         
         setupView(barsView)
-        
     }
+    
     override func constraintViews() {
         super.constraintViews()
         
@@ -33,10 +31,9 @@ extension DailyPerformanceView {
             barsView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -15),
             barsView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10),
         ])
-        
     }
+    
     override func configureAppearance() {
         super.configureAppearance()
-        
     }
 }

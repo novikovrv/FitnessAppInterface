@@ -15,7 +15,6 @@ enum Tabs: Int, CaseIterable {
 }
 
 final class TabBarController: UITabBarController {
-    
     override func viewDidLoad() {//вызывается после того, как контроллер загружает свое представление в память. Это идеальное место для выполнения начальной настройки
         super.viewDidLoad()
         
@@ -43,6 +42,7 @@ final class TabBarController: UITabBarController {
                                                  tag: tab.rawValue)
             return controller
         }
+        
         setViewControllers(controllers, animated: false)
         
         func getController(for tab: Tabs) -> BaseController {
@@ -53,7 +53,5 @@ final class TabBarController: UITabBarController {
             case .progress: return ProgressController()
             }
         }
-        
-      
     }
 }

@@ -13,7 +13,6 @@ final class StepsView: WABaseInfoView {
     func configure(with items: [WABarView.Data]) {
         barsView.configure(with: items)
     }
-    
 }
 
 extension StepsView {
@@ -21,8 +20,8 @@ extension StepsView {
         super.setupViews()
         
         setupView(barsView)
-        
     }
+    
     override func constraintViews() {
         super.constraintViews()
         
@@ -32,11 +31,10 @@ extension StepsView {
             barsView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -15),
             barsView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10),
         ])
-        
     }
+    
     override func configureAppearance() {
         super.configureAppearance()
-        
     }
 }
 

@@ -17,8 +17,7 @@ extension TimerView {// чтобы не было глобальной видим
             let center = CGPoint(x: radius, y: radius)
             let startAngle = -CGFloat.pi * 7 / 6
             let endAngle = CGFloat.pi * 1 / 6
-            
-            
+        
             let circlePath = UIBezierPath(arcCenter: center,
                                           radius: radius,
                                           startAngle: startAngle,
@@ -44,7 +43,7 @@ extension TimerView {// чтобы не было глобальной видим
             let dotAngle = CGFloat.pi * (7 / 6 - (8 / 6 * percent))
             let dotPoint = CGPoint(x: cos(-dotAngle) * radius + center.x,
                                    y: sin(-dotAngle) * radius + center.y)
-            
+    
             let dotPath = UIBezierPath()
             dotPath.move(to: dotPoint)// начальная точка
             dotPath.addLine(to: dotPoint)// конечная точка
@@ -90,7 +89,6 @@ extension TimerView {// чтобы не было глобальной видим
                 let endBarPoint = CGPoint(x: cos(-barAngle) * endBarRadius + center.x,
                                           y: sin(-barAngle) * endBarRadius + center.y)
                 
-                
                 let barPath = UIBezierPath()
                 barPath.move(to: startBarPoint)
                 barPath.addLine(to: endBarPoint)
@@ -107,15 +105,11 @@ extension TimerView {// чтобы не было глобальной видим
                 angle -=  1 / 6
             }
           
-            
             layer.addSublayer(defaultCircleLayer)
             layer.addSublayer(circleLayer)
             layer.addSublayer(bigDotLayer)
             layer.addSublayer(dotLayer)
             layer.addSublayer(barsLayer)
-            
-            
-            
         }
     }
 }

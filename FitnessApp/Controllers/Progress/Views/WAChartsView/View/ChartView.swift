@@ -9,7 +9,6 @@
 import UIKit
 
 final class ChartView: WABaseView {
-    
     private let yAxisSeparator: UIView = {
         let view = UIView()
         view.backgroundColor = R.Colors.separator
@@ -27,7 +26,6 @@ final class ChartView: WABaseView {
         drawDashLines()
         drawChart(with: data, topChartOffset: 10)
     }
-    
 }
 
 extension ChartView {
@@ -36,14 +34,12 @@ extension ChartView {
 
         setupView(yAxisSeparator)
         setupView(xAxisSeparator)
-       
-        
     }
+    
     override func constraintViews() {
         super.constraintViews()
         
         NSLayoutConstraint.activate([
-            
             yAxisSeparator.topAnchor.constraint(equalTo: topAnchor),
             yAxisSeparator.widthAnchor.constraint(equalToConstant: 1),
             yAxisSeparator.leadingAnchor.constraint(equalTo: leadingAnchor),
@@ -53,10 +49,9 @@ extension ChartView {
             xAxisSeparator.trailingAnchor.constraint(equalTo: trailingAnchor),
             xAxisSeparator.leadingAnchor.constraint(equalTo: leadingAnchor),
             xAxisSeparator.bottomAnchor.constraint(equalTo: bottomAnchor),
-            
-            
         ])
     }
+    
     override func configureAppearance() {
         super.configureAppearance()
         
@@ -65,7 +60,6 @@ extension ChartView {
 }
 
 private extension ChartView {
-    
     func drawDashLines(with counts: Int = 9) {
         (0..<counts).map { CGFloat($0) }.forEach {
             drawDashLine(at: bounds.height / CGFloat(counts) * $0)

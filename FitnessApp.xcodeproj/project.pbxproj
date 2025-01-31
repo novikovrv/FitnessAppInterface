@@ -7,26 +7,26 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		1D9315772D22C77B0000AE97 /* FeetnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeetnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D9315772D22C77B0000AE97 /* FitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		1D1CA7A12D4D046A0061F793 /* Exceptions for "FeetnessApp" folder in "FeetnessApp" target */ = {
+		1D1CA7A12D4D046A0061F793 /* Exceptions for "FitnessApp" folder in "FitnessApp" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				SupportingFiles/Info.plist,
 			);
-			target = 1D93143B2D0CAC890000AE97 /* FeetnessApp */;
+			target = 1D93143B2D0CAC890000AE97 /* FitnessApp */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		1D93149C2D0D95530000AE97 /* FeetnessApp */ = {
+		1D93149C2D0D95530000AE97 /* FitnessApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				1D1CA7A12D4D046A0061F793 /* Exceptions for "FeetnessApp" folder in "FeetnessApp" target */,
+				1D1CA7A12D4D046A0061F793 /* Exceptions for "FitnessApp" folder in "FitnessApp" target */,
 			);
-			path = FeetnessApp;
+			path = FitnessApp;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -45,17 +45,17 @@
 		1D9314332D0CAC890000AE97 = {
 			isa = PBXGroup;
 			children = (
-				1D93149C2D0D95530000AE97 /* FeetnessApp */,
-				1D9315772D22C77B0000AE97 /* FeetnessApp.app */,
+				1D93149C2D0D95530000AE97 /* FitnessApp */,
+				1D9315772D22C77B0000AE97 /* FitnessApp.app */,
 			);
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1D93143B2D0CAC890000AE97 /* FeetnessApp */ = {
+		1D93143B2D0CAC890000AE97 /* FitnessApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D93144F2D0CAC8A0000AE97 /* Build configuration list for PBXNativeTarget "FeetnessApp" */;
+			buildConfigurationList = 1D93144F2D0CAC8A0000AE97 /* Build configuration list for PBXNativeTarget "FitnessApp" */;
 			buildPhases = (
 				1D9314382D0CAC890000AE97 /* Sources */,
 				1D9314392D0CAC890000AE97 /* Frameworks */,
@@ -66,13 +66,13 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				1D93149C2D0D95530000AE97 /* FeetnessApp */,
+				1D93149C2D0D95530000AE97 /* FitnessApp */,
 			);
-			name = FeetnessApp;
+			name = FitnessApp;
 			packageProductDependencies = (
 			);
 			productName = FeetnessApp;
-			productReference = 1D9315772D22C77B0000AE97 /* FeetnessApp.app */;
+			productReference = 1D9315772D22C77B0000AE97 /* FitnessApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -90,7 +90,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1D9314372D0CAC890000AE97 /* Build configuration list for PBXProject "FeetnessApp" */;
+			buildConfigurationList = 1D9314372D0CAC890000AE97 /* Build configuration list for PBXProject "FitnessApp" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -104,7 +104,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1D93143B2D0CAC890000AE97 /* FeetnessApp */,
+				1D93143B2D0CAC890000AE97 /* FitnessApp */,
 			);
 		};
 /* End PBXProject section */
@@ -139,7 +139,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VDC3UP5M5X;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FeetnessApp/SupportingFiles/Info.plist;
+				INFOPLIST_FILE = FitnessApp/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -149,7 +149,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "-.FeetnessApp";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.FitnessApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -170,7 +170,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VDC3UP5M5X;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FeetnessApp/SupportingFiles/Info.plist;
+				INFOPLIST_FILE = FitnessApp/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -180,7 +180,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "-.FeetnessApp";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.FitnessApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -314,7 +314,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D9314372D0CAC890000AE97 /* Build configuration list for PBXProject "FeetnessApp" */ = {
+		1D9314372D0CAC890000AE97 /* Build configuration list for PBXProject "FitnessApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D9314522D0CAC8A0000AE97 /* Debug */,
@@ -323,7 +323,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1D93144F2D0CAC8A0000AE97 /* Build configuration list for PBXNativeTarget "FeetnessApp" */ = {
+		1D93144F2D0CAC8A0000AE97 /* Build configuration list for PBXNativeTarget "FitnessApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D9314502D0CAC8A0000AE97 /* Debug */,

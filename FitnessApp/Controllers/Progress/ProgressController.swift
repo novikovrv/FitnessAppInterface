@@ -8,7 +8,6 @@
 import UIKit
 
 class ProgressController: BaseController {
-    
     private let dailyPerformanceView = DailyPerformanceView(
         with: R.Strings.Progress.dailyPerformance,
         buttonTitle: R.Strings.Progress.last7Days)
@@ -26,8 +25,6 @@ class ProgressController: BaseController {
         addNuvButton(at: .left, with: R.Strings.Progress.navBarLeft)
         addNuvButton(at: .right, with: R.Strings.Progress.navBarRight)
     }
-
-
 }
 
 extension ProgressController {
@@ -36,8 +33,8 @@ extension ProgressController {
         
         view.setupView(dailyPerformanceView)
         view.setupView(monthlyPerformanceView)
-        
     }
+    
     override func constraintViews() {
         super.constraintViews()
         
@@ -47,18 +44,16 @@ extension ProgressController {
             dailyPerformanceView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -15),
             dailyPerformanceView.heightAnchor.constraint(equalTo: dailyPerformanceView.widthAnchor, multiplier: 0.68),
             
-            
             monthlyPerformanceView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 15),
             monthlyPerformanceView.topAnchor.constraint(equalTo: dailyPerformanceView.bottomAnchor, constant: 15),
             monthlyPerformanceView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -15),
             monthlyPerformanceView.heightAnchor.constraint(equalTo: monthlyPerformanceView.widthAnchor, multiplier: 1.06),
         ])
-        
     }
+    
     override func configureAppearance() {
         super.configureAppearance()
     
-
         dailyPerformanceView.configure(with: [.init(value: "1", heightMultiplayer: 0.2, title: "MON"),
                                    .init(value: "2", heightMultiplayer: 0.4, title: "TUE"),
                                    .init(value: "3", heightMultiplayer: 0.6, title: "WEN"),

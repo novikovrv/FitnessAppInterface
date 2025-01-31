@@ -16,10 +16,8 @@ extension WABarView {
 }
 
 final class WABarView: WABaseView {
-    
     private let heightMultiplayer: Double
 
-    
     private let valueLabel: UILabel = {
         let label = UILabel()
         label.font = R.Fonts.helveticaRegular(with: 13)
@@ -34,14 +32,12 @@ final class WABarView: WABaseView {
         return view
     }()
     
-    
     private let titleLabel: UILabel = {
         let label = UILabel()
         label.font = R.Fonts.helveticaRegular(with: 9)
         label.textColor = R.Colors.inactive
         return label
     }()
-    
     
     init(data: Data) {
         self.heightMultiplayer = data.heightMultiplayer
@@ -50,11 +46,11 @@ final class WABarView: WABaseView {
         valueLabel.text = data.value
         titleLabel.text = data.title.uppercased()
     }
+    
     @MainActor required init?(coder: NSCoder) {
         self.heightMultiplayer = 0
         super.init(frame: .zero)
     }
-    
 }
 extension WABarView {
     override func setupViews() {
@@ -63,9 +59,8 @@ extension WABarView {
         setupView(valueLabel)
         setupView(barView)
         setupView(titleLabel)
- 
-        
     }
+    
     override func constraintViews() {
         super.constraintViews()
         
@@ -84,10 +79,9 @@ extension WABarView {
             titleLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
             titleLabel.bottomAnchor.constraint(equalTo: bottomAnchor),
             titleLabel.heightAnchor.constraint(equalToConstant: 10),
-            
-            
         ])
     }
+    
     override func configureAppearance() {
         super.configureAppearance()
         

@@ -8,7 +8,6 @@
 import UIKit
 
 class WABaseInfoView: WABaseView {
-    
     private let titleLabel: UILabel = {
         let label = UILabel()
         label.font = R.Fonts.helveticaRegular(with: 13)
@@ -35,7 +34,6 @@ class WABaseInfoView: WABaseView {
         button.setTitle(buttonTitle?.uppercased())
         button.isHidden = buttonTitle == nil ? true : false
         super.init(frame: .zero)
-        
     }
     
     @MainActor required init?(coder: NSCoder) {
@@ -44,8 +42,7 @@ class WABaseInfoView: WABaseView {
     
     func addButtonTarget(target: Any?, action: Selector) {
         button.addTarget(action, action: action, for: .touchUpInside)
-    }
-    
+    }  
 }
 extension WABaseInfoView {
     override func setupViews() {

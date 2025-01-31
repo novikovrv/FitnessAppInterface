@@ -35,9 +35,7 @@ enum StatsItem {
     }
 }
 
-
 final class StatsItemView: WABaseView {
-    
     struct ItemData {
         let image: UIImage?
         let value: String
@@ -81,8 +79,8 @@ extension StatsItemView {
         setupView(stackView)
         stackView.addArrangedSubview(valueLabel)
         stackView.addArrangedSubview(titleLabel)
-        
     }
+    
     override func constraintViews() {
         super.constraintViews()
         
@@ -97,10 +95,9 @@ extension StatsItemView {
             stackView.bottomAnchor.constraint(equalTo: bottomAnchor),
             stackView.trailingAnchor.constraint(equalTo: trailingAnchor),
         ])
-        
     }
+    
     override func configureAppearance() {
         super.configureAppearance()
-        
     }
 }

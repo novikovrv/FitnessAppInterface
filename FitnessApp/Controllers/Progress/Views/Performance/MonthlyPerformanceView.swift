@@ -8,13 +8,11 @@
 import UIKit
 
 final class MonthlyPerformanceView: WABaseInfoView {
-    
     private let chartsView = WAChartsView()
     
     func configure(with items: [WAChartsView.Data]) {
         chartsView.configure(with: items)
     }
-    
 }
 
 extension MonthlyPerformanceView {
@@ -22,8 +20,8 @@ extension MonthlyPerformanceView {
         super.setupViews()
         
         setupView(chartsView)
-        
     }
+    
     override func constraintViews() {
         super.constraintViews()
         
@@ -33,10 +31,9 @@ extension MonthlyPerformanceView {
             chartsView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -15),
             chartsView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10),
         ])
-        
     }
+    
     override func configureAppearance() {
         super.configureAppearance()
-        //chartsView.backgroundColor = .cyan
     }
 }

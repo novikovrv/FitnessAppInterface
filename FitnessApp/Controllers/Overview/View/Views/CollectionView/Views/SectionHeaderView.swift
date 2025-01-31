@@ -8,7 +8,6 @@
 import UIKit
 
 final class SectionHeaderView: UICollectionReusableView {
-    
     static let id = "SectionHeaderView"
     
     private let title: UILabel = {
@@ -38,19 +37,16 @@ final class SectionHeaderView: UICollectionReusableView {
     func configure(with date: Date) {
         let dateFotmatter = DateFormatter()
         dateFotmatter.dateFormat = "EEEE, MMMM dd"
-        
         self.title.text = dateFotmatter.string(from: date).uppercased()
     }
 }
 
 private extension SectionHeaderView {
     func setupViews() {
-        
         setupView(title)
-        
     }
+    
     func constraintViews() {
-
         NSLayoutConstraint.activate([
             title.centerXAnchor.constraint(equalTo: centerXAnchor),
             title.centerYAnchor.constraint(equalTo: centerYAnchor),
@@ -58,6 +54,4 @@ private extension SectionHeaderView {
     }
     
     func configureAppearance() {}
-   
-
 }

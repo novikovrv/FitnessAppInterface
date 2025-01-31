@@ -8,12 +8,10 @@
 import UIKit
 
 final class StatsView: WABaseInfoView {
-    
     private let stackView: UIStackView = {
         let view = UIStackView()
         view.axis = .vertical
         view.spacing = 15
-        //view.backgroundColor = .red
         return view
     }()
     
@@ -23,9 +21,7 @@ final class StatsView: WABaseInfoView {
             itemView.configure(with: $0)
             stackView.addArrangedSubview(itemView)
         }
-        
     }
-    
 }
 
 extension StatsView {
@@ -33,8 +29,8 @@ extension StatsView {
         super.setupViews()
         
         setupView(stackView)
-        
     }
+    
     override func constraintViews() {
         super.constraintViews()
         
@@ -44,11 +40,10 @@ extension StatsView {
             stackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -15),
             stackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -15),
         ])
-        
     }
+    
     override func configureAppearance() {
         super.configureAppearance()
-        
     }
 }
 

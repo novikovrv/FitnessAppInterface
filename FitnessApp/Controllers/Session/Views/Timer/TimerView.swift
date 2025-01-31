@@ -13,7 +13,6 @@ enum TimerState {
 }
 
 final class TimerView: WABaseInfoView {
-
     private let elapsedTimeLable: UILabel = {
         let lable = UILabel()
         lable.text = R.Strings.Session.elapsedTime
@@ -88,19 +87,17 @@ final class TimerView: WABaseInfoView {
         let goalValueDevider = duration == 0 ? 1 : duration
         let percent = tempCurrentValue / goalValueDevider
         let roundedPercent = Int(round(percent * 100))
+        
         progressView.drawProgress(with: CGFloat(percent))
-
         elapsedTimeValueLable.text = getDisplayedString(from: Int(tempCurrentValue))
         remainingTimeValueLable.text = getDisplayedString(from: Int(duration) - Int(tempCurrentValue))
         completedPercentView.configure(with: "COMPLETED", andValue: roundedPercent)
         remainingPercetnView.configure(with: "REMAINING", andValue: 100 - roundedPercent)
-        
         progressView.drawProgress(with: CGFloat(percent))
     }
 
     func startTimer() {
         timer.invalidate()
-
         timer = Timer.scheduledTimer(withTimeInterval: 0.01,
                                      repeats: true,
                                      block: { [weak self] timer in
@@ -124,7 +121,6 @@ final class TimerView: WABaseInfoView {
     func stopTimer() {
         guard self.timerProgress > 0 else { return }
         timer.invalidate()
-
         timer = Timer.scheduledTimer(withTimeInterval: 0.01,
                                      repeats: true,
                                      block: { [weak self] timer in

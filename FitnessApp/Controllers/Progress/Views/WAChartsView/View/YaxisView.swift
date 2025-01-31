@@ -8,10 +8,7 @@
 
 import UIKit
 
-
-
 final class YaxisView: WABaseView {
-    
     private let stackView: UIStackView = {
         let view = UIStackView()
         view.axis = .vertical
@@ -33,9 +30,7 @@ final class YaxisView: WABaseView {
             
             stackView.addArrangedSubview(label)
         }
-            
     }
-    
 }
 
 extension YaxisView {
@@ -43,22 +38,19 @@ extension YaxisView {
         super.setupViews()
 
         setupView(stackView)
-       
-        
     }
+    
     override func constraintViews() {
         super.constraintViews()
         
         NSLayoutConstraint.activate([
-            
             stackView.topAnchor.constraint(equalTo: topAnchor),
             stackView.trailingAnchor.constraint(equalTo: trailingAnchor),
             stackView.leadingAnchor.constraint(equalTo: leadingAnchor),
             stackView.bottomAnchor.constraint(equalTo: bottomAnchor),
-            
-            
         ])
     }
+    
     override func configureAppearance() {
         super.configureAppearance()
         

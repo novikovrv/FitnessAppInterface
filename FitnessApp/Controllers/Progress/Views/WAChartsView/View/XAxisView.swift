@@ -8,10 +8,7 @@
 
 import UIKit
 
-
-
 final class XAxisView: WABaseView {
-    
     private let stackView: UIStackView = {
         let view = UIStackView()
         view.distribution = .equalSpacing
@@ -32,9 +29,7 @@ final class XAxisView: WABaseView {
             
             stackView.addArrangedSubview(label)
         }
-            
     }
-    
 }
 
 extension XAxisView {
@@ -42,22 +37,19 @@ extension XAxisView {
         super.setupViews()
 
         setupView(stackView)
-       
-        
     }
+    
     override func constraintViews() {
         super.constraintViews()
         
         NSLayoutConstraint.activate([
-            
             stackView.topAnchor.constraint(equalTo: topAnchor),
             stackView.trailingAnchor.constraint(equalTo: trailingAnchor),
             stackView.leadingAnchor.constraint(equalTo: leadingAnchor),
             stackView.bottomAnchor.constraint(equalTo: bottomAnchor),
-            
-            
         ])
     }
+    
     override func configureAppearance() {
         super.configureAppearance()
         

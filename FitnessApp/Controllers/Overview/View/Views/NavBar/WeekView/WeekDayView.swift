@@ -17,7 +17,6 @@ extension WeekView {
             let startWeek = Date().startOfWeek
             let currentDay = startWeek.goForward(to: index)
             let day = Calendar.current.component(.day, from: currentDay)
-            
             let isToday = currentDay.stripTime() == Date().stripTime()
             
             backgroundColor = isToday ? R.Colors.active : R.Colors.backGround
@@ -28,7 +27,6 @@ extension WeekView {
             dateLabel.text = "\(day)"// интерполяция
             dateLabel.textColor = isToday ? .white : R.Colors.inactive
         }
-        
     }
 }
 
@@ -37,23 +35,19 @@ extension WeekView.WeekDayView {
         super.setupViews()
         
         setupView(stackView)
-        
         stackView.addArrangedSubview(nameLabel)
         stackView.addArrangedSubview(dateLabel)
-        
-
     }
+    
     override func constraintViews() {
         super.constraintViews()
         
         NSLayoutConstraint.activate([
-            
             stackView.centerXAnchor.constraint(equalTo: centerXAnchor),
             stackView.centerYAnchor.constraint(equalTo: centerYAnchor),
-            
-
         ])
     }
+    
     override func configureAppearance() {
         super.configureAppearance()
         
@@ -70,6 +64,5 @@ extension WeekView.WeekDayView {
         
         stackView.spacing = 3
         stackView.axis = .vertical
-        
     }
 }

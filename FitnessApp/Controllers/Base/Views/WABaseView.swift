@@ -8,14 +8,12 @@
 import UIKit
 
 class WABaseView: UIView {
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupViews()
         constraintViews()
         configureAppearance()
     }
-
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)

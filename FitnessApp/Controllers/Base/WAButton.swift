@@ -13,7 +13,6 @@ public enum WAButtonType {
 }
 
 final class WAButton: UIButton {
-    
     private var type: WAButtonType = .primary
     
     private let label: UILabel = {
@@ -39,12 +38,12 @@ final class WAButton: UIButton {
     
     required init?(coder: NSCoder) {
         super.init(frame: .zero)
-
         
         setupViews()
         constraintViews()
         configureAppearance()
     }
+    
     func setTitle(_ title: String?) {
         label.text = title
     }
@@ -52,7 +51,6 @@ final class WAButton: UIButton {
 
 
 private extension WAButton {
-    
     func setupViews() {
         setupView(label)
         setupView(iconView)
@@ -79,7 +77,6 @@ private extension WAButton {
     }
     
     func configureAppearance() {
-        
         switch type {
         case .primary:
             label.textColor = R.Colors.inactive
@@ -94,12 +91,6 @@ private extension WAButton {
             iconView.tintColor = R.Colors.active
             
         }
-        
-        
         makeSystem(self)// extension for animation
-        
-      
-      
-    }
-    
+    }  
 }

@@ -8,7 +8,6 @@
 import UIKit
 
 final class TrainingCellView: UICollectionViewCell {
-    
     static let id = "TrainingCellView"
     
     private let checkMarkView = UIImageView(image: R.Images.Overview.checkMarkNotDone)
@@ -65,12 +64,10 @@ private extension TrainingCellView {
         setupView(stackView)
         stackView.addArrangedSubview(title)
         stackView.addArrangedSubview(subTitle)
-    
         setupView(rightErrowVeiw)
-        
     }
+    
     func constraintViews() {
-
         NSLayoutConstraint.activate([
             checkMarkView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15),
             checkMarkView.centerYAnchor.constraint(equalTo: centerYAnchor),
@@ -85,7 +82,6 @@ private extension TrainingCellView {
             rightErrowVeiw.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -15),
             rightErrowVeiw.heightAnchor.constraint(equalToConstant: 12),
             rightErrowVeiw.widthAnchor.constraint(equalToConstant: 7),
-    
         ])
     }
     
@@ -94,8 +90,6 @@ private extension TrainingCellView {
         layer.borderWidth = 1
         layer.borderColor = R.Colors.separator.cgColor
     }
-   
-
 }
 
 

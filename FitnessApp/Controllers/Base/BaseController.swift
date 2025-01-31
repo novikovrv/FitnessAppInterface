@@ -13,7 +13,6 @@ enum NavBarPosition {
 }
 
 class BaseController: UIViewController {
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -71,6 +70,4 @@ extension BaseController {
         }
         navigationController?.view.layoutSubviews()
     }
-    
-    
 }
